@@ -3,16 +3,15 @@ package com.Basic;
 import com.Basic.member.Grade;
 import com.Basic.member.Member;
 import com.Basic.member.MemberService;
-import com.Basic.member.MemberServiceImpl;
 import com.Basic.order.Order;
 import com.Basic.order.OrderService;
-import com.Basic.order.OrderServiceImpl;
 
 public class OrderApp {
 
     public static void main(String[] args) {
-        MemberService memberService = new MemberServiceImpl();
-        OrderService orderService = new OrderServiceImpl();
+        AppConfig appConfig = new AppConfig();
+        MemberService memberService = appConfig.memberService();
+        OrderService orderService = appConfig.orderService();
 
         Long memberId = 1L;
         Member member = new Member(memberId, "memberA", Grade.VIP);
