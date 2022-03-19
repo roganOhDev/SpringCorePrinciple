@@ -2,7 +2,6 @@ package com.Basic.scan;
 
 import com.Basic.AutoAppConfig;
 import com.Basic.member.MemberService;
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
